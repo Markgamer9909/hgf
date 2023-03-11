@@ -1,0 +1,18 @@
+def setup():
+    size(600,600)
+def draw():
+    r = 255
+    e = 30
+    global q,w,e,r
+    for q in range(0,600,50):
+        for w in range(0,600,50):
+            fill(r)
+            rect(w,q,50,50)
+            if r == 255:
+                r = 0
+            else:
+                r = 255
+        if r == 255:
+            r = 0
+        else:
+            r = 255
