@@ -1,0 +1,39 @@
+def setup():
+    size(400,400)
+def draw():
+    fill(255)
+    textSize(20)
+    #text(u"Топ-5 грустных гвоздей",90,50)
+    if keyPressed:
+        if key == 'd':
+            img = loadImage("1.jpg")
+            image(img,0,0,400,400)
+            text(u"Топ-5 грустных гвоздей",90,50)
+            text(u"гвоздь кино-актёр",90,100)
+    if keyPressed:
+        if key == 'f':
+            img = loadImage("12.jpg")
+            image(img,0,0,400,400)
+            text(u"Топ-4 грустных гвоздей",90,50)
+            text(u"гвоздь в колючей проволке",90,100)
+    if keyPressed:
+        if key == 'g':
+            img = loadImage("123.jpg")
+            image(img,0,0,400,400)
+            text(u"Топ-3 грустных гвоздей",90,50)
+            text(u"два гвоздя",90,100)
+    if keyPressed:
+        if key == 'h':
+            img = loadImage("1234.jpg")
+            image(img,0,0,400,400)
+            fill(0,0,0)
+            text(u"Топ-2 грустных гвоздей",90,50)
+            text(u"гвоздь без пары",90,100)
+    if keyPressed:
+        if key == 'j':
+            img = loadImage("12345.jpg")
+            image(img,0,0,400,400)
+            fill(255)
+            text(u"Топ-1 грустных гвоздей",90,50)
+            text(u"гвоздь хочет стать балеринай",90,100)
+            text(u"но он гвоздь",90,130)
