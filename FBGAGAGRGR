@@ -1,0 +1,26 @@
+def setup():
+    size(1940,1080)
+    imgBG = loadImage("background.jpg")
+    image(imgBG,0,0,1400,800)
+def draw():
+    img1 = loadImage("1.png")
+    image(img1,10,65,50,50)
+    img2 = loadImage("2.png")
+    image(img2,5,10,60,50)
+    
+def mouseClicked():
+    if mouseX > 10 and mouseX < 60 and mouseY > 65 and mouseY < 115:
+        rect(300,150,800,500)
+        img3 = loadImage("3.png")
+        image(img3,350,120,700,400)
+        push()
+        fill(42,58,80)
+        rect(300,150,800,25)
+        pop()
+        push()
+        fill(255,31,31)
+        rect(1050,150,50,25)
+        pop()
+        line(1065,156,1085,170)
+        line(1065,170,1085,156,)
+    # if mouseX > 10 and mouseX < 60 and mouseY > 65 and mouseY < 115:
