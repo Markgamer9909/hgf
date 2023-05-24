@@ -1,0 +1,65 @@
+e = u" "
+a = 255
+def setup():
+    size(1940,1080)
+    imgBG = loadImage("background.jpg")
+    image(imgBG,0,0,1400,800)
+    frameRate(1000)
+def draw():
+    img1 = loadImage("1.png")
+    image(img1,10,65,50,50)
+    img2 = loadImage("2.png")
+    image(img2,5,10,60,50)
+    push()
+    fill(a)
+    text(e,420,438)
+    pop()
+    if mousePressed:
+       if mouseX >1050 and mouseX < 1100 and mouseY > 150 and mouseY < 175:
+           imgBG = loadImage("background.jpg")
+           image(imgBG,0,0,1400,800)
+           textSize(0.001)
+
+def keyPressed():
+    global e
+    if key == ENTER and e == " news":
+        imgBG = loadImage("background.jpg")
+        image(imgBG,0,0,1400,800)
+        rect(300,150,800,500)
+        push()
+        fill(42,58,80)
+        rect(300,150,800,25)
+        pop()
+        push()
+        fill(255,31,31)
+        rect(1050,150,50,25)
+        pop()
+        textSize(0.01)
+        line(1065,156,1085,170)
+        line(1065,170,1085,156,)
+    if mouseX >1050 and mouseX < 1100 and mouseY > 150 and mouseY < 175:
+        imgBG = loadImage("background.jpg")
+        image(imgBG,0,0,1400,800)
+    if key!= CODED:
+        e += key
+        
+def mouseClicked():
+    global e,a
+    if mouseX > 10 and mouseX < 60 and mouseY > 65 and mouseY < 115:
+        rect(300,150,800,500)
+        img3 = loadImage("3.png")
+        image(img3,350,120,700,400)
+        push()
+        fill(42,58,80)
+        rect(300,150,800,25)
+        pop()
+        push()
+        fill(255,31,31)
+        rect(1050,150,50,25)
+        pop()
+        line(1065,156,1085,170)
+        line(1065,170,1085,156,)
+        rect(400,410,600,50,100)
+    if mouseX > 400 and mouseX < 1000 and mouseY > 410 and mouseY < 460:
+        textSize(12)
+        a = 0
